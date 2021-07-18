@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1G0/R8OoXuXytkpuB5q6de1hq3vu3j1yuEIW8iGJwkiAHdlHzlrdlZTudi+oJPwKCq806vIto+GOn2RUaOZUZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\GregoriBrunoFelicio\\Desktop\\Repositories\\NerdStoreEnterprise\\src\\services\\NSE.Identidade.API\\NSE.Identidade.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GregoriBrunoFelicio\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512"
+  ],
+  "logs": []
+}
