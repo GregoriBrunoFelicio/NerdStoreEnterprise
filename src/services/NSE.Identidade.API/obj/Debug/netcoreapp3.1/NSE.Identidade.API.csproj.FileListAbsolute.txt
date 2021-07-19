@@ -69,3 +69,6 @@ C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\servic
 C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Identidade.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Identidade.API\obj\Debug\netcoreapp3.1\NSE.Identidade.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Identidade.API\obj\Debug\netcoreapp3.1\NSE.Identidade.API.csproj.CopyComplete
+C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Identidade.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Identidade.API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Identidade.API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
