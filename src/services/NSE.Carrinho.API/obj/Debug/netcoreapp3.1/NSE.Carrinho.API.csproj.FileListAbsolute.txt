@@ -17,3 +17,4 @@ C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\servic
 C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Carrinho.API\obj\Debug\netcoreapp3.1\NSE.Carrinho.API.dll
 C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Carrinho.API\obj\Debug\netcoreapp3.1\NSE.Carrinho.API.pdb
 C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Carrinho.API\obj\Debug\netcoreapp3.1\NSE.Carrinho.API.genruntimeconfig.cache
+C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\services\NSE.Carrinho.API\obj\Debug\netcoreapp3.1\NSE.Carrinho.API.csproj.AssemblyReference.cache
