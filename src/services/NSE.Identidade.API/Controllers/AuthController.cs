@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace NSE.Identidade.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/identidade")]
     public class AuthController : Controller
     {
         private readonly SignInManager<IdentityUser> _signInManager;
@@ -39,7 +39,7 @@ namespace NSE.Identidade.API.Controllers
             return Ok();
         }
 
-        [HttpPost("login")]
+        [HttpPost("autenticar")]
         public async Task<IActionResult> Login([FromBody] UsuarioLogin usuarioLogin)
         {
             if (ModelState.IsValid) return BadRequest();
