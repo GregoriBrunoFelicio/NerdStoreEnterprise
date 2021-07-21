@@ -33,6 +33,8 @@ namespace NSE.Identidade.API
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            // JWT
+
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
 
@@ -50,10 +52,10 @@ namespace NSE.Identidade.API
                 bearerOptions.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("X")),
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = true,
-                    ValidAudience = "X",
-                    ValidIssuer = "X",
+                    ValidAudience = appSettings.ValidoEm,
+                    ValidIssuer = appSettings.Emissor,
                 };
             });
 
