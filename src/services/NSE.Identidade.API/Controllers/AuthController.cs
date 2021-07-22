@@ -32,7 +32,7 @@ namespace NSE.Identidade.API.Controllers
         [HttpPost("nova-conta")]
         public async Task<IActionResult> Registrar([FromBody] UsuarioRegistro usuarioRegistro)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
             var user = new IdentityUser
             {
@@ -43,23 +43,33 @@ namespace NSE.Identidade.API.Controllers
 
             var result = await _userManager.CreateAsync(user, usuarioRegistro.Senha);
 
-            if (!result.Succeeded) return BadRequest();
+            if (result.Succeeded) return CustomResponse(await GerarJwt(usuarioRegistro.Email));
 
-            await _signInManager.SignInAsync(user, false);
+            AdicionarErroProcessamento(result.Errors.Select(x => x.Description).ToArray());
 
-            return Ok(await GerarJwt(usuarioRegistro.Email));
+            return CustomResponse();
         }
 
         [HttpPost("autenticar")]
         public async Task<IActionResult> Login([FromBody] UsuarioLogin usuarioLogin)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
             var result = await _signInManager.PasswordSignInAsync(usuarioLogin.Email, usuarioLogin.Senha, false, true);
 
-            if (!result.Succeeded) return BadRequest();
+            if (result.Succeeded)
+            {
+                return CustomResponse(await GerarJwt(usuarioLogin.Email));
+            }
 
-            return Ok(await GerarJwt(usuarioLogin.Email));
+            if (result.IsLockedOut)
+            {
+                AdicionarErroProcessamento("Usuario bloqueado.");
+                return CustomResponse();
+            }
+
+            AdicionarErroProcessamento("Usuario ou senha incorretos .");
+            return CustomResponse();
         }
 
         private async Task<UsuarioRespostaLogin> GerarJwt(string email)

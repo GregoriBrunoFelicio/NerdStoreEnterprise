@@ -40,6 +40,14 @@ namespace NSE.Identidade.API.Controllers
 
         protected void AdicionarErroProcessamento(string erro) => Erros.Add(erro);
 
+        protected void AdicionarErroProcessamento(string[] erros)
+        {
+            foreach (var erro in erros)
+            {
+                Erros.Add(erro);
+            }
+        }
+
         protected void LimparErrosProcessamento() => Erros.Clear();
     }
 }
