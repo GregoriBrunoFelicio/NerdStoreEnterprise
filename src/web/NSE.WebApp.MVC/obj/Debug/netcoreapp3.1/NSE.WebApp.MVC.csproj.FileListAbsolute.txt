@@ -351,3 +351,5 @@ C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\web\NS
 C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\NSE.WebApp.MVC.dll
 C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\NSE.WebApp.MVC.pdb
 C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\NSE.WebApp.MVC.genruntimeconfig.cache
+C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Identidade\Login.cshtml.g.cs
+C:\Users\GregoriBrunoFelicio\Desktop\Repositories\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Identidade\Registro.cshtml.g.cs
