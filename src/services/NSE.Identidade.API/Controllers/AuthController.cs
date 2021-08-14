@@ -123,7 +123,7 @@ namespace NSE.Identidade.API.Controllers
         private UsuarioRespostaLogin ObterRespostaToken(string encodedToken, IdentityUser user, IEnumerable<Claim> claims) =>
             new UsuarioRespostaLogin
             {
-                AcessoToken = encodedToken,
+                AccessToken = encodedToken,
                 ExpiresIn = TimeSpan.FromHours(_appSettings.ExpiracaoHoras).TotalSeconds,
                 UsuarioToken = new UsuarioToken
                 {
